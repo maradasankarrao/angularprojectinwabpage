@@ -1,0 +1,31 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+.ss{
+    text-align: center;
+padding: 3px 12px 2px 13px;
+margin-left: 39px;
+color:
+gold;
+
+}
+.A1{
+    text-align: center;
+    color: #4c0ef7;
+    font-size: 30PX;
+    margin-bottom: 20PX;
+
+}
+.a2{
+    color: red;
+    margin: 0px 0px 15px 30px;
+}
+.a12{
+    color: royalblue;
+    margin: 0px 0px 0px 7px;
+}
+.pri{
+    margin: 0px 0px 0px 45px;
+    color: yellow;
+}

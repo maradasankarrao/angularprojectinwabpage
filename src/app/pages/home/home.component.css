@@ -1,0 +1,49 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+.a2{
+    border: 1px solid;
+}
+
+.p{
+    font-size: 12px;
+    text-align: center;
+}
+.sa{
+    margin-left: 5px;
+}
+.love{
+    font-size: 20px;
+}
+.lo{
+    padding: 0px 31px;
+}
+.lb{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.looking{
+    border: 1px solid;
+    margin: 22px 138px 10px 20px;
+    padding: 10px 10px;
+}
+.b1{
+    margin-left: 100px;
+    padding: 9px 29px;
+    border-radius: 25px;
+}
+.f1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: gold;
+    height: 63px;
+    padding: 7px 0px 0px 0px;
+    color: crimson;
+}
+.fp{
+    font-size: 14px;
+    padding: 0px 31px 31px 31px;
+    background-color: deepskyblue;
+}
