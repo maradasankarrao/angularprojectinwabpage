@@ -1,27 +1,15 @@
-<div class="our-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 our">
-        <h3><b>Our</b>Services</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor
-          tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos.</p>
-      </div>
-    </div>
-<div class="row">
-      <div class="col ss"> <img src="assets/images/sec-cut-img_13.png">
-        <h5>Facial</h5>
-      </div>
-      <div class="col ss"> <img src="assets/images/sec-cut-img_16.png">
-        <h5>Hair Care</h5>
-      </div>
-      <div class="col ss"> <img src="assets/images/sec-cut-img_19.png">
-        <h5>Body Care</h5>
-      </div>
-      <div class="col ss"> <img src="assets/images/sec-cut-img_21.png">
-        <h5>Bridal</h5>
-      </div>
-      <div class="col ss"> <img src="assets/images/sec-cut-img_23.png">
-        <h5>Special Package</h5>
-      </div>
-    </div>
+<table>
+  <tr>
+    <th>sl.no</th>
+    <th>Quantity</th> 
+    <th>price</th>
+    <th>ToTal Price</th>
+  </tr>
+  <tbody *ngFor="let i of models">
+  <tr >
+    <td>{{i.name}}</td>
+    <td>{{i.Quantity}}</td>
+    <td>{{i.price}}</td>
+  </tr>
+</tbody>
+</table>

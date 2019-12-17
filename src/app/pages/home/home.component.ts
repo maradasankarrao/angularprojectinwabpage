@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{ CommonService}from 'src/app/common.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private share:CommonService) { }
 
   ngOnInit() {
   }
