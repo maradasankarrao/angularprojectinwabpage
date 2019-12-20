@@ -6,14 +6,21 @@ import{ CommonService}from 'src/app/common.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  models=[];
+  
+ 
   constructor(private share:CommonService) { }
-
+  // listcart=[]
+  // binding=""
+  // Quantityadd="";
+  list=this.share.samsungproductos
+  models=this.share.indexall;
+  b:number=0;
   ngOnInit() {
-    this.models=this.share.cartproducts
+    for (let val of this.models) {
+      this.b+=(val.quantity*val.price)    
+}
+}
+  removeCartList(c:number){
+    this.models.splice(c,1);
   }
- getcarts(){
-   return this.share.cartproducts
- }
-
 }

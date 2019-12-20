@@ -3,19 +3,20 @@
     <div class="container">
         <div class="row">
 
-             <div class="col-3" *ngFor="let i of getDataCart()">
+             <div class="col-3" *ngFor="let item of items">
                <div class="card" >
-                <img src="{{i.image}}" class="card-img-top img-responsive img-fluid"  alt="...">
+                <img src="{{item.image}}" class="card-img-top img-responsive img-fluid"  alt="...">
                 <div class="card-body bg-light">
-                    <h5 class="card-title">{{i.name}}</h5>
+                    <h5 class="card-title">{{item.name}}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <b class="pri">{{(i.price*80)/100}}</b>
-                    <b><del>{{i.price}}</del></b>
-                    <p class="card-text a2">{{i.dis}}<span class="a12">discount</span></p>
-                  <button class="btn btn-primary ss" (onclick)="addIteam(p)">this cart</button>
+                    <b class="pri">{{discountpriceadd(item.price,item.discount)}}</b>
+                    <b><del>{{item.price}}</del></b>
+                    <p class="card-text a2">{{item.discount}}<span class="a12">discount</span></p>
+                  <button class="btn btn-primary ss" (click)="addIteam(item)">this cart</button>
                 </div>
                </div>  
              </div>
         </div>
      </div>
   </div> 
+ 

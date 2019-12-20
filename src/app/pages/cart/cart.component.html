@@ -1,15 +1,78 @@
-<table>
+<!-- <table>
   <tr>
     <th>sl.no</th>
     <th>Quantity</th> 
     <th>price</th>
     <th>ToTal Price</th>
   </tr>
-  <tbody *ngFor="let i of models">
-  <tr >
+  <tbody >
+  <tr *ngFor="let i of listcart">
     <td>{{i.name}}</td>
     <td>{{i.Quantity}}</td>
     <td>{{i.price}}</td>
   </tr>
 </tbody>
-</table>
+</table> -->
+
+<!-- ............................................... -->
+<div class="container bootstrap snippet ss">
+    <div class="col-md-9 col-sm-8 content">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li class="active">Cart</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-info panel-shadow">
+                    <div class="panel-body"> 
+                        <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let i of listcart;index as s">
+                                    <td><img src="{{i.image}}" class="img-cart"></td>
+                                    <td><strong>{{i.name}}</strong><p>{{i.size}}</p></td>
+                                    <td>
+                                        <input class="input-number" type="number" value="1" min="1" max="5" [(ngModel)]="i.quantity">
+                                        <button rel="tooltip" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                                        <button class="btn btn-danger" (click)="removeCartList(s)"><i class="fa fa-trash-o">delete</i></button>
+                                    </td>
+                                    <td>{{i.price}}</td>
+                                    <td></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="4" class="text-right">Total Product</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right">Total Shipping</td>
+                                    <td>$2.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right"><strong>Total</strong></td>
+                                    <td>$88.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+                <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Continue Shopping</a>
+                <a href="#" class="btn btn-primary pull-right">Next<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
